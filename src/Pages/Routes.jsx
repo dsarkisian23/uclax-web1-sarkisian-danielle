@@ -7,6 +7,7 @@ import "@/Common/css/global.scss";
 // layout
 import PagesLayout from "@/Common/PagesLayout/PagesLayout";
 
+import { MediaQueryProvider} } from "@/Common/useMediaQuery.jsx";
 // page components
 import Home from "./Home";
 import Staff from "./Staff";
@@ -15,12 +16,13 @@ import Contact from "./Contact";
 // course work page components
 import CourseWorkLayout from "./CourseWork/CourseWorkLayout";
 import SunAndMoon from "./CourseWork/SunAndMoon/SunAndMoon";
-import Essays from "./CourseWork/Essays";
+import Essays from "./CourseWork/Essays/Essays.jsx";
 import ResponsiveDesign from "./CourseWork/ResponsiveDesign";
 
 const MyRoutes = () => {
     return (
         <HashRouter>
+            <MediaQueryProvider>
             <Routes>
                 <Route element={<PagesLayout />}>
                     <Route element={<Home />} path="" />
@@ -37,6 +39,7 @@ const MyRoutes = () => {
                     </Route>
                 </Route>
             </Routes>
+            </MediaQueryProvider>
         </HashRouter>
     );
 };
