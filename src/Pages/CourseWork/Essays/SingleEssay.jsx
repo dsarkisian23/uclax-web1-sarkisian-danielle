@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import PropTypes from "proptypes";
+import PropTypes from "prop-types";
 
 const SingleEssay = ({ question, children }) => {
     return (
         <SingleEssayStyled>
-            <h3>question</h3>
+            <h3>{question}</h3>
             <div className="content">{children}</div>
         </SingleEssayStyled>
     );
