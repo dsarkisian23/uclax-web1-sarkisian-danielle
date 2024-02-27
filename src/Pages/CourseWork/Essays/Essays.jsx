@@ -45,6 +45,20 @@ const Essays = () => {
                     developers.
                 </ul>
             </SingleEssay>
+            <SingleEssay
+                question={`What is the difference between a Front-End and Back-End Developer?`}
+            >
+                <ul>
+                    <li>
+                        <b>Front-end</b> = implement design and UX/UI — what the
+                        users see such as buttons, text, images
+                    </li>
+                    <li>
+                        <b>Back-end</b> = implement how data is stored and
+                        structure of application
+                    </li>
+                </ul>
+            </SingleEssay>
         </EssaysStyled>
     );
 };

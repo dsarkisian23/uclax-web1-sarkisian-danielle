@@ -10,7 +10,7 @@ import PagesLayout from "@/Common/PagesLayout/PagesLayout";
 import { MediaQueryProvider } from "@/Common/useMediaQuery.jsx";
 // page components
 import Home from "./Home";
-import Staff from "./Staff";
+import Staff from "./Staff/Staff";
 import Contact from "./Contact";
 
 // course work page components
