@@ -59,6 +59,93 @@ const Essays = () => {
                     </li>
                 </ul>
             </SingleEssay>
+            <SingleEssay
+                question={`In React, what are the different ways we can link to resources (e.g. Root Relative vs Document Relative)?`}
+            >
+                <ul>
+                    <li>
+                        <b>Root Relative</b> = doesn’t include domain name,
+                        subdomain name, or extension — comes from the
+                        site/domain (is writing links from the root of the
+                        folder or domain), it assumes that it will always come
+                        from root directory
+                    </li>
+                    <li>
+                        <b>Document Relative</b> = uses document and file names,
+                        when using ./ looking in same directory, if ../ going up
+                        a directory and if you continue the pattern each time it
+                        would go up a directory, adjust based on where files are
+                        located
+                    </li>
+                </ul>
+            </SingleEssay>
+            <SingleEssay
+                question={`What is the difference between jpg, gif, png and svg images?`}
+            >
+                <ul>
+                    <li>
+                        <b>jpg</b> = joint photographic experts group, digital
+                        photography, small file size, large choice in colors
+                    </li>
+                    <li>
+                        <b>gif</b> = graphic interchange format, best for
+                        animated graphics with less colors, transparency on/off
+                    </li>
+                    <li>
+                        <b>png</b> = portable network graphic, better quality
+                        image, lots of colors, large file size, support
+                        transparent backgrounds, preferred for graphic design,
+                        meant to be best of both worlds (jpg and gif)
+                    </li>
+                    <li>
+                        <b>svg</b> = scalable vector graphics, uses math and
+                        coordinates to scale image, best used for logos or
+                        geometric images (not photographs with lots of colors)
+                    </li>
+                </ul>
+            </SingleEssay>
+            <SingleEssay
+                question={`Define the following Agile roles: Product Manager, Product Owner, Business Analyst, Scrum Master, UX Designer, Developer/Engineer, QA/SDET, and DevOps`}
+            >
+                <ul>
+                    <li>
+                        <b>Product Manager</b> = cross-functional team leader
+                        that sets product vision and strategy, bringing product
+                        closer to business goals
+                    </li>
+                    <li>
+                        <b>Product Owner</b> = leads product team in setting and
+                        reaching product goals
+                    </li>
+                    <li>
+                        <b>Business Analyst</b> = uses business analytics to
+                        support product manager in creating strategy, and
+                        reviews the results of each sprint
+                    </li>
+                    <li>
+                        <b>Scrum Master</b> = makes sure everyone follows scrum
+                        method
+                    </li>
+                    <li>
+                        <b>UX Designer</b> = user research, user personas, site
+                        map, information architecture, user interface,
+                        wireframing, prototyping, usability testing
+                    </li>
+                    <li>
+                        <b>Developer/Engineer</b> = turns the prototype into
+                        functional application (both front-end and back-end)
+                    </li>
+                    <li>
+                        <b>QA/SDET</b> = test quality assurance to make sure
+                        product is good to go before launch to consumers
+                    </li>
+                    <li>
+                        <b>DevOps</b> = mix of software engineering and
+                        operations, making sure that engineers are efficient and
+                        product software data is organized properly
+                    </li>
+                </ul>
+            </SingleEssay>
         </EssaysStyled>
     );
 };
